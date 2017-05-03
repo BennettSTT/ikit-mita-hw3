@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Model
+{
+    public abstract class Gambler
+    {
+        protected Gambler(string name)
+        {
+            Name = name;
+        }
+
+        public readonly string Name;
+        public int Score { get; protected set; }
+
+        public abstract void NewNumber(int number);
+    }
+}
