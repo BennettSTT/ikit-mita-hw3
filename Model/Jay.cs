@@ -14,7 +14,7 @@ namespace Model
 
         public override void NewNumber(int number)
         {
-            if(number.IsEven())
+            if (number.IsEven())
                 Score++;
         }
     }

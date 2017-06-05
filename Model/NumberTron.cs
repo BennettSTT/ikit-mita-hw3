@@ -11,11 +11,11 @@ namespace Model
     public class Numbertron
     {
         public event NewNumber GetNumber;
+        private readonly Random _random = new Random();
 
         public void Generate()
         {
-            var random = new Random();
-            GetNumber?.Invoke(random.Next(1, int.MaxValue));
+            GetNumber?.Invoke(_random.Next(int.MaxValue));
         }
     }
 }

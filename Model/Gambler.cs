@@ -13,7 +13,7 @@ namespace Model
             Name = name;
         }
 
-        public readonly string Name;
+        public string Name { get; }
         public int Score { get; protected set; }
 
         public abstract void NewNumber(int number);
